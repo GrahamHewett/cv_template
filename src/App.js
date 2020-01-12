@@ -187,18 +187,17 @@ function App() {
               </div>
               <div className="details">
                 <p>
-                  Private Maths Tutor serving Gloucestershire County. Link?
+                  Private Maths Tutor serving Gloucestershire County.
                 </p>
                 <p>
                   Responsible for the maths education of approximately 120
                   students across 5 classes and the personal wellbeing of 30
                   students in my tutor group. Athletics, UKMT
                   Maths Challenges and Badminton were extra-curricular
-                  activities I helped offer to all pupils.
+                  activities I assisted with.
                 </p>
               </div>
             </div>
-
             <div className="item">
               <div className="meta">
                 <div className="upper-row">
