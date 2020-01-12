@@ -71,7 +71,7 @@ function App() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    www.meetup.com/kodiri/
+                    www.meetup.com/kodiri
                   </a>
                 </p>
               </div>
