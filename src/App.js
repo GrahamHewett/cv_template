@@ -1,165 +1,281 @@
-import React from 'react';
-import './App.css';
-import SkillItem from './sectionItems/SkillItem';
+import React from "react";
+import "./App.css";
+import SkillItem from "./sections/items/SkillItem";
+import ContactSection from "./sections/contactLinks";
+// import ProjectsSection from "./sections/Projects"
 
 function App() {
   return (
     <div className="App">
-        <div class="wrapper">
-        <div class="sidebar-wrapper">
-            <div class="profile-container">
-                <img class="profile" src="assets/images/profile.png" alt="" />
-                <h1 class="name">Alan Doe</h1>
-                <h3 class="tagline">Full Stack Developer</h3>
+      <div className="wrapper">
+        <div className="main-wrapper">
+          <section className="section summary-section">
+            <h2 className="section-title">
+              <span className="icon-holder">
+                <i className="fas fa-user"></i>
+              </span>
+              Personal Profile
+            </h2>
+            <div className="summary">
+              <p>
+                An experienced web developer/teacher who is grateful and excited
+                to be able to work in the ever-evolving field of software
+                development. My previous experience in the Education, Financial
+                and Medical sectors has allowed me to develop my teaching skills
+                and assist in the training of new tech talent. I am a confident
+                public speaker having organised and led many public events and
+                workshops around the London tech scene. My specialicities are
+                React, Node, SQL.
+              </p>
             </div>
-            
-            <div class="contact-container container-block">
-                <ul class="list-unstyled contact-list">
-                    <li class="email"><i class="fas fa-envelope"></i><a href="mailto: yourname@email.com">alan.doe@website.com</a></li>
-                    <li class="phone"><i class="fas fa-phone"></i><a href="tel:0123 456 789">0123 456 789</a></li>
-                    <li class="website"><i class="fas fa-globe"></i><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/orbit-free-resume-cv-bootstrap-theme-for-developers/" target="_blank" rel="noopener noreferrer">portfoliosite.com</a></li>
-                    <li class="linkedin"><i class="fab fa-linkedin-in"></i><a href="/" target="_blank" rel="noopener noreferrer">linkedin.com/in/alandoe</a></li>
-                    <li class="github"><i class="fab fa-github"></i><a href="/" target="_blank" rel="noopener noreferrer">github.com/username</a></li>
-                    <li class="twitter"><i class="fab fa-twitter"></i><a href="https://twitter.com/3rdwave_themes" target="_blank" rel="noopener noreferrer">@twittername</a></li>
-                </ul>
-            </div>
-            <div class="education-container container-block">
-                <h2 class="container-block-title">Education</h2>
-                <div class="item">
-                    <h4 class="degree">MSc in Computer Science</h4>
-                    <h5 class="meta">University of London</h5>
-                    <div class="time">2011 - 2012</div>
+          </section>
+
+          <section className="section experiences-section">
+            <h2 className="section-title">
+              <span className="icon-holder">
+                <i className="fas fa-briefcase"></i>
+              </span>
+              Relevant Experience
+            </h2>
+
+            <div className="item">
+              <div className="meta">
+                <div className="upper-row">
+                  <h3 className="job-title">
+                    Lead Instructor and JavaScript Developer
+                  </h3>
+                  <div className="time">Jan 2019 - Present</div>
                 </div>
-                <div class="item">
-                    <h4 class="degree">BSc in Applied Mathematics</h4>
-                    <h5 class="meta">Bristol University</h5>
-                    <div class="time">2007 - 2011</div>
+                <div className="company">Kodiri, London</div>
+              </div>
+              <div className="details">
+                <p>
+                  {`Main instructor for a London based software development bootcamp, teaching cohorts of approximately 15 people at a time.
+                Topics taught included JavaScript, React, Node.js, MongoDB, Git, CSS and HTML. `}
+                  <a
+                    href="https://www.kodiri.com/bootcamp"
+                    alt="Kodiri Website"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    www.kodiri.com/bootcamp
+                  </a>
+                </p>
+                <p>
+                  {`Meetup event organiser for over 30 Tech Events `}
+                  <a
+                    href="https://www.meetup.com/kodiri/"
+                    alt="Kodiri Meetup group"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    www.meetup.com/kodiri/
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div className="item">
+              <div className="meta">
+                <div className="upper-row">
+                  <h3 className="job-title">
+                    Database Administrator and Statistical Researcher
+                  </h3>
+                  <div className="time">Jan 2014 - Dec 2015</div>
                 </div>
+                <div className="company">
+                  Uropath, Leederville, WA, Australia
+                </div>
+              </div>
+              <div className="details">
+                <p>
+                  R, SQL and MySQL were the prevalent technologies I used as a
+                  DBA for the main prostate and renal cancer database in Western
+                  Australia.
+                </p>
+                <p>
+                  I also used the database data to assist in the development of
+                  life saving nomograms, performed statistical analyses and
+                  contributed to peer-reviewed Urological journal articles.
+                </p>
+              </div>
             </div>
-            
-            <div class="languages-container container-block">
-                <h2 class="container-block-title">Languages</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>English <span class="lang-desc">(Native)</span></li>
-                    <li>French <span class="lang-desc">(Professional)</span></li>
-                    <li>Spanish <span class="lang-desc">(Professional)</span></li>
-                </ul>
+
+            <div className="item">
+              <div className="meta">
+                <div className="upper-row">
+                  <h3 className="job-title">Actuarial Statistician</h3>
+                  <div className="time">March 2013 - June 2013</div>
+                </div>
+                <div className="company">
+                  Friends Life Group plc, Pixham Lane, Dorking, Surrey
+                </div>
+              </div>
+              <div className="details">
+                <p>
+                  Working alongside two senior actuaries I was responsible for
+                  the analysis, verification and simplification of external
+                  financial risk models based on Moody's data.
+                </p>
+                <p>
+                  I produced some custom programming in R to calculate a more
+                  accurate time value of options and guarantees (TVOG) estimate
+                  for Friends Life with profit funds.
+                  {/* This enabled a unified TVOG calculation in time for the
+                companies’ annual reports following their merger with AXA Life. */}
+                </p>
+              </div>
             </div>
-            
-            <div class="interests-container container-block">
-                <h2 class="container-block-title">Interests</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>Climbing</li>
-                    <li>Snowboarding</li>
-                    <li>Cooking</li>
-                </ul>
+          </section>
+
+          <section className="skills-section section">
+            <h2 className="section-title">
+              <span className="icon-holder">
+                <i className="fas fa-rocket"></i>
+              </span>
+              Skills, Technologies and Tools
+            </h2>
+            <div className="skillset">
+              <div className="flexRow">
+                <div className="skillItem1">
+                  <SkillItem
+                    title="JavaScript: "
+                    skills="ES6+, React, Node, Express"
+                  />
+                </div>
+                <div className="skillItem2">
+                  <SkillItem title="Testing: " skills="Jest and Enzyme" />
+                </div>
+              </div>
+              <div className="flexRow">
+                <div className="skillItem1">
+                  <SkillItem title="Databases: " skills="MYSQL, MongoDB" />
+                </div>
+                <div className="skillItem2">
+                  <SkillItem title="Data Layer: " skills="SQL, GraphQL, JSON" />
+                </div>
+              </div>
+              <div className="flexRow">
+                <div className="skillItem1">
+                  <SkillItem
+                    title="Version Control: "
+                    skills="Git, Github, Travis CI"
+                  />
+                </div>
+                <div className="skillItem2">
+                  <SkillItem
+                    title="Linux: "
+                    skills="10+ yrs Debian user, bash"
+                  />
+                </div>
+              </div>
+              <SkillItem title="Browser: " skills="HTML5, CSS3, fetch API" />
+              {/* <SkillItem skill="Python: &amp; Django" /> */}
+              {/* <SkillItem skill='Design: Inkscape, Figma, SVG' /> */}
             </div>
-            
+          </section>
+
+          <section className="section experiences-section">
+            <h2 className="section-title">
+              <span className="icon-holder">
+                <i className="fas fa-briefcase"></i>
+              </span>
+              Additional Experience
+            </h2>
+            <div className="item">
+              <div className="meta">
+                <div className="upper-row">
+                  <h3 className="job-title">
+                    Mathematics Teacher and Private Tutor
+                  </h3>
+                  <div className="time">May 2016 - Nov 2018</div>
+                </div>
+                <div className="company">
+                  Wycliffe College and self employed
+                </div>
+              </div>
+              <div className="details">
+                <p>
+                  Responsible for the maths education of approximately 120
+                  students across 5 classes and the personal wellbeing of 30
+                  students in my tutor group. After-school Athletics Club, UKMT
+                  Maths Challenges and lunchtime Badminton were extra-curricular
+                  activities I helped offer to all pupils.
+                </p>
+              </div>
+            </div>
+
+            <div className="item">
+              <div className="meta">
+                <div className="upper-row">
+                  <h3 className="job-title">
+                    School of Business Sessional Tutor
+                  </h3>
+                  <div className="time">July 2013 - Dec 2013</div>
+                </div>
+                <div className="company">
+                  Notre Dame University, Freemantle, WA, Australia
+                </div>
+              </div>
+              <div className="details">
+                <p>
+                  Quantitative Methods for Business Tutor responsible for the
+                  delivery of group tutorials, student support sessions and the
+                  marking of five assessments per semester.
+                </p>
+              </div>
+            </div>
+          </section>
         </div>
-        
-        <div class="main-wrapper">
-            
-            <section class="section summary-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-user"></i></span>Career Profile</h2>
-                <div class="summary">
-                    <p>Summarise your career here lorem ipsum dolor sit amet, consectetuer adipiscing elit. You can <a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/orbit-free-resume-cv-bootstrap-theme-for-developers/" target="_blank" rel="noopener noreferrer">download this free resume/CV template here</a>. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.</p>
-                </div>
-            </section>
-            
-            <section class="section experiences-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-briefcase"></i></span>Experiences</h2>
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Lead Developer</h3>
-                            <div class="time">2015 - Present</div>
-                        </div>
-                        <div class="company">Startup Hubs, San Francisco</div>
-                    </div>
-                    <div class="details">
-                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</p>  
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                    </div>
-                </div>
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Senior Software Engineer</h3>
-                            <div class="time">2014 - 2015</div>
-                        </div>
-                        <div class="company">Google, London</div>
-                    </div>
-                    <div class="details">
-                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>  
-                        
-                    </div>
-                </div>
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">UI Developer</h3>
-                            <div class="time">2012 - 2014</div>
-                        </div>
-                        <div class="company">Amazon, London</div>
-                    </div>
-                    <div class="details">
-                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>  
-                    </div>
-                </div>
-                
-            </section>
-            
-            <section class="section projects-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-archive"></i></span>Projects</h2>
-                <div class="intro">
-                    <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
-                </div>
-                <div class="item">
-                    <span class="project-title"><a href="#hook">Velocity</a></span> - <span class="project-tagline">A responsive website template designed to help startups promote, market and sell their products.</span>
-                    
-                </div>
-                <div class="item">
-                    <span class="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/" target="_blank" rel="noopener noreferrer">DevStudio</a></span> - 
-                    <span class="project-tagline">A responsive website template designed to help web developers/designers market their services. </span>
-                </div>
-                <div class="item">
-                    <span class="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-startups-tempo/" target="_blank" rel="noopener noreferrer">Tempo</a></span> - <span class="project-tagline">A responsive website template designed to help startups promote their products or services and to attract users &amp; investors</span>
-                </div>
-                <div class="item">
-                    <span class="project-title"><a href="hhttp://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank" rel="noopener noreferrer">Atom</a></span> - <span class="project-tagline">A comprehensive website template solution for startups/developers to market their mobile apps. </span>
-                </div>
-                <div class="item">
-                    <span class="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/" target="_blank" rel="noopener noreferrer">Delta</a></span> - <span class="project-tagline">A responsive Bootstrap one page theme designed to help app developers promote their mobile apps</span>
-                </div>
-            </section>
-            
-            <section class="skills-section section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-rocket"></i></span>Skills, Technolgies and Tools</h2>
-                <div class="skillset">        
-                    <SkillItem skill='Python &amp; Django' />
-                    <SkillItem skill='JavaScript and React' />
-                    <SkillItem skill='HTML5 and CSS3' />
-                    <SkillItem skill='Git and Github' />
-                    <SkillItem skill='Node, Express' />
-                    <SkillItem skill='Fetch API, axios' />
-                    <SkillItem skill='Databases MYSQL and MongoDB' />
-                    <SkillItem skill='SQL, GraphQL, JSON' />
-                    {/* <SkillItem skill='Inkscape, Figma, SVG' /> */}
-                </div>  
-            </section>
-            
+        <div className="sidebar-wrapper">
+          <div className="profile-container">
+            <h1 className="name">Graham Hewett</h1>
+            <h3 className="tagline">Full Stack JavaScript Developer</h3>
+          </div>
+
+          <ContactSection />
+
+          <div className="education-container container-block">
+            <h2 className="container-block-title">Education</h2>
+            <div className="item">
+              <h4 className="degree">PGDip in Biometry</h4>
+              <h5 className="meta">University of Reading</h5>
+              <div className="time">2011 - 2012</div>
+            </div>
+            <div className="item">
+              <h4 className="degree">BSc Hons Mathematics and Statistics</h4>
+              <h5 className="meta">The Open University</h5>
+              <div className="time">2008 - 2011</div>
+            </div>
+            <div className="item">
+              <h4 className="degree">
+                A Levels in Maths, Physics and Physical Education
+              </h4>
+              <h5 className="meta">Fullbrook Sixth Form, Surrey</h5>
+              <div className="time">2002 - 2004</div>
+            </div>
+            <div className="item">
+              <h4 className="degree">GCSEs 4A's, 6B's</h4>
+              <h5 className="meta">
+                Heathside Secondary School, Weybridge, Surrey
+              </h5>
+              <p className="time">1997 - 2002</p>
+            </div>
+          </div>
+
+          <div className="interests-container container-block">
+            <h2 className="container-block-title">Hobbies</h2>
+            <ul className="list-unstyled interests-list">
+              <li>Running</li>
+              <li>Cycling</li>
+              <li>Yoga</li>
+              <li>Dog Walking</li>
+            </ul>
+          </div>
         </div>
-    </div>
- 
-    <footer class="footer">
-        <div class="text-center">
-                
-                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" rel="noopener noreferrer" target="_blank">Xiaoying Riley</a> for developers</small>
-        </div>
-    </footer>
+      </div>
+
+      {/* <ProjectsSection /> */}
     </div>
   );
 }

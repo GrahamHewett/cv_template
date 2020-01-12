@@ -1,8 +1,16 @@
+/* increase all text by 1.25 */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #545E6C;
   background: #f5f5f5;
-  font-size: 14px;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,8 +19,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   color: #3d884d;
+  /* text-decoration: none; */
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -21,12 +34,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
   color: #25532f;
-}
-
-a:focus {
-  text-decoration: none;
 }
 
 p {
@@ -35,23 +43,34 @@ p {
 
 .wrapper {
   background: #5BB66F;
-  max-width: 960px;
+  width: 99vw;
+  display: flex;
+  height: calc(99vw * 1.41);
   margin: 0 auto;
-  margin-top: 30px;
   position: relative;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.main-wrapper {
+  background: #fff;
+  padding: 35px 60px;
+  flex: 13;
+  min-height: 800px;
+}
+
 .sidebar-wrapper {
   background: #5BB66F;
-  position: absolute;
   right: 0;
-  width: 240px;
+  flex: 7;
   height: 100%;
-  min-height: 800px;
+  min-height: 800px; min-width: 300px;
   color: #fff;
+}
+
+.flexRow {
+  display: flex;
 }
 
 .sidebar-wrapper a {
@@ -74,7 +93,7 @@ p {
 
 .sidebar-wrapper .tagline {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
@@ -92,6 +111,7 @@ p {
 
 .sidebar-wrapper .contact-list li {
   margin-bottom: 15px;
+  font-size: 18px;
 }
 
 .sidebar-wrapper .contact-list li:last-child {
@@ -99,7 +119,7 @@ p {
 }
 
 .sidebar-wrapper .contact-list .email .svg-inline--fa {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .sidebar-wrapper .container-block {
@@ -108,20 +128,22 @@ p {
 
 .sidebar-wrapper .container-block-title {
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .sidebar-wrapper .degree {
-  font-size: 14px;
   margin-top: 0;
   margin-bottom: 5px;
 }
 
 .sidebar-wrapper .education-container .item {
   margin-bottom: 15px;
+  font-size: 18px;
+  text-align: center;
 }
 
 .sidebar-wrapper .education-container .item:last-child {
@@ -129,11 +151,9 @@ p {
 }
 
 .sidebar-wrapper .education-container .meta {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
-  margin-bottom: 0px;
-  margin-top: 0;
-  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);  
+  font-size: 18px; font-weight: 500;
+  margin-bottom: 0px; margin-top: 0;
 }
 
 .sidebar-wrapper .education-container .time {
@@ -160,30 +180,28 @@ p {
 
 .sidebar-wrapper .interests-list {
   margin-bottom: 0;
+  text-align: center;
 }
 
 .sidebar-wrapper .interests-list li {
   margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .sidebar-wrapper .interests-list li:last-child {
   margin-bottom: 0;
 }
 
-.main-wrapper {
-  background: #fff;
-  padding: 60px;
-  padding-right: 300px;
-}
+
 
 .main-wrapper .section-title {
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   color: #3d884d;
   position: relative;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 .main-wrapper .section-title .icon-holder {
@@ -202,22 +220,22 @@ p {
   background-clip: padding-box;
   background: #3d884d;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   position: relative;
   top: -8px;
 }
 
 .main-wrapper .section-title .icon-holder .svg-inline--fa {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 6px;
 }
 
 .main-wrapper .section {
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 
 .main-wrapper .experiences-section .item {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .main-wrapper .upper-row {
@@ -228,7 +246,7 @@ p {
 
 .main-wrapper .job-title {
   color: #3F4650;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 500;
@@ -247,7 +265,7 @@ p {
 }
 
 .main-wrapper .project-title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 5px;
@@ -262,47 +280,25 @@ p {
 }
 
 .skillset .item {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   overflow: hidden;
+  font-size: 18px;
 }
 
-.skillset .level-title {
-  font-size: 14px;
+.skillset .skill-title {
   margin-top: 0;
   margin-bottom: 12px;
+  font-weight: 500;
 }
 
-.skillset .level-bar {
-  height: 12px;
-  background: #f5f5f5;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
+.skillset .skillItem1 {
+  flex: 3;
 }
 
-.skillset .theme-progress-bar {
-  background: #7ec68e;
+.skillset .skillItem2 {
+  flex: 2;
 }
 
-.footer {
-  padding: 30px;
-  padding-top: 60px;
-}
-
-.footer .copyright {
-  line-height: 1.6;
-  color: #545E6C;
-  font-size: 13px;
-}
-
-.footer .fa-heart {
-  color: #fb866a;
-}
 
 @media (max-width: 767.98px) {
   .sidebar-wrapper {
@@ -323,7 +319,7 @@ p {
 }
 
 @media print {
-  #content {
+  .wrapper {
     column-count: 2;
     -webkit-column-count: 2;
     -moz-column-count: 2;
