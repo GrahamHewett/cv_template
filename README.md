@@ -1,4 +1,5 @@
-This CV is currently deployed at https://grahamhewettcv.now.sh/.
+## This CV is currently deployed at https://grahamhewettcv.now.sh/.
+
 Built using react.js and
 based of a HTML template originally designed by Xiaoying Riley at 3rd Wave Media (https://themes.3rdwavemedia.com/)
 
