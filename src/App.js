@@ -143,7 +143,7 @@ function App() {
                 skills="ES6+ including Async and Await, React, Node, Express, Gatsby"
               />
               <div className="flexRow">
-                <SkillItem title="Databases: " skills="MYSQL, MongoDB" />
+                <SkillItem title="Databases: " skills="MySQL, MongoDB" />
 
                 <SkillItem title="Data Layer: " skills="SQL, GraphQL, JSON" />
               </div>
@@ -155,7 +155,7 @@ function App() {
               <div className="flexRow">
                 <SkillItem
                   title="Version Control: "
-                  skills="Git, Github, Travis"
+                  skills="Git, GitHub, Travis"
                 />
 
                 <SkillItem title="Linux: " skills="10+ yrs Debian user, bash" />
@@ -177,7 +177,7 @@ function App() {
               <div className="meta">
                 <div className="upper-row">
                   <h3 className="job-title">
-                    Mathematics Teacher and Private Tutor
+                    Maths Teacher and Private Tutor
                   </h3>
                   <div className="time">May 2016 - Nov 2018</div>
                 </div>
