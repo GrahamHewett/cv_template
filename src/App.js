@@ -18,14 +18,16 @@ function App() {
             </h2>
             <div className="summary">
               <p>
-                An experienced web developer/teacher who is grateful and excited
-                to be able to work in the ever-evolving field of software
-                development. My previous experience in the Education, Financial
-                and Medical sectors has allowed me to develop my teaching skills
-                and assist in the training of new tech talent. I am a confident
-                public speaker having organised and led many public events and
-                workshops around the London tech scene. My specialicities are
-                React, Node, SQL.
+                An experienced full-stack developer/teacher who is grateful and
+                excited to be able to work in the ever-evolving field of
+                software development. My previous experience in the Education,
+                Financial and Medical sectors has allowed me to develop my
+                teaching skills and assist in the training of new tech talent. I
+                am a confident public speaker having organised and led many
+                public events and workshops around the London tech scene. I
+                specialise in data-driven JavaScript applications utilising
+                modern JavaScript methods in combination with tools such as
+                React.js, Node.js and Gatsby.
               </p>
             </div>
           </section>
@@ -136,40 +138,29 @@ function App() {
               Skills, Technologies and Tools
             </h2>
             <div className="skillset">
+              <SkillItem
+                title="JavaScript: "
+                skills="ES6+ including Async and Await, React, Node, Express, Gatsby"
+              />
               <div className="flexRow">
-                <div className="skillItem1">
-                  <SkillItem
-                    title="JavaScript: "
-                    skills="ES6+, React, Node, Express"
-                  />
-                </div>
-                <div className="skillItem2">
-                  <SkillItem title="Testing: " skills="Jest and Enzyme" />
-                </div>
+                <SkillItem title="Databases: " skills="MYSQL, MongoDB" />
+
+                <SkillItem title="Data Layer: " skills="SQL, GraphQL, JSON" />
               </div>
               <div className="flexRow">
-                <div className="skillItem1">
-                  <SkillItem title="Databases: " skills="MYSQL, MongoDB" />
-                </div>
-                <div className="skillItem2">
-                  <SkillItem title="Data Layer: " skills="SQL, GraphQL, JSON" />
-                </div>
+                <SkillItem title="Browser: " skills="HTML5, CSS3, fetch API" />
+
+                <SkillItem title="Testing: " skills="Jest and Enzyme" />
               </div>
               <div className="flexRow">
-                <div className="skillItem1">
-                  <SkillItem
-                    title="Version Control: "
-                    skills="Git, Github, Travis CI"
-                  />
-                </div>
-                <div className="skillItem2">
-                  <SkillItem
-                    title="Linux: "
-                    skills="10+ yrs Debian user, bash"
-                  />
-                </div>
+                <SkillItem
+                  title="Version Control: "
+                  skills="Git, Github, Travis"
+                />
+
+                <SkillItem title="Linux: " skills="10+ yrs Debian user, bash" />
               </div>
-              <SkillItem title="Browser: " skills="HTML5, CSS3, fetch API" />
+
               {/* <SkillItem skill="Python: &amp; Django" /> */}
               {/* <SkillItem skill='Design: Inkscape, Figma, SVG' /> */}
             </div>
@@ -196,10 +187,13 @@ function App() {
               </div>
               <div className="details">
                 <p>
+                  Private Maths Tutor serving Gloucestershire County. Link?
+                </p>
+                <p>
                   Responsible for the maths education of approximately 120
                   students across 5 classes and the personal wellbeing of 30
-                  students in my tutor group. After-school Athletics Club, UKMT
-                  Maths Challenges and lunchtime Badminton were extra-curricular
+                  students in my tutor group. Athletics, UKMT
+                  Maths Challenges and Badminton were extra-curricular
                   activities I helped offer to all pupils.
                 </p>
               </div>

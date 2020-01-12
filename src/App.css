@@ -48,9 +48,9 @@ p {
   height: calc(99vw * 1.41);
   margin: 0 auto;
   position: relative;
-  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  /* -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 .main-wrapper {
@@ -282,6 +282,7 @@ p {
 .skillset .item {
   margin-bottom: 5px;
   overflow: hidden;
+  flex: 1;
   font-size: 18px;
 }
 
@@ -290,15 +291,6 @@ p {
   margin-bottom: 12px;
   font-weight: 500;
 }
-
-.skillset .skillItem1 {
-  flex: 3;
-}
-
-.skillset .skillItem2 {
-  flex: 2;
-}
-
 
 @media (max-width: 767.98px) {
   .sidebar-wrapper {
