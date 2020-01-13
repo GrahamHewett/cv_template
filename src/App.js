@@ -139,8 +139,8 @@ function App() {
             </h2>
             <div className="skillset">
               <SkillItem
-                title="JavaScript: "
-                skills="ES6+ including Async and Await, React, Node, Express, Gatsby"
+                title="JavaScript"
+                skills=": ES6+ including Async and Await, React, Node, Express, Gatsby"
               />
               <div className="flexRow">
                 <SkillItem title="Databases: " skills="MySQL, MongoDB" />
